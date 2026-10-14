@@ -1,0 +1,96 @@
+/* 1. CONFIGURAÇÕES GERAIS DA PÁGINA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(255, 245, 233); /* Cor bege do fundo */
+    padding: 20px;
+}
+input, textarea {
+    font-size: 15px !important;
+    color: #333333;
+}
+
+/* 2. LOGO */
+.header-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#logo-img {
+    width: 250px;
+}
+
+/* 3. ORGANIZAÇÃO DOS CARTÕES LADO A LADO */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Se a tela for pequena, joga o cartão para baixo */
+    gap: 20px;       /* Espaço entre os cartões */
+}
+
+/* 4. ESTILO DOS CARTÕES (AZUL) */
+.card {
+    background-color: rgb(42, 57, 97); /* Azul escuro */
+    color: white;
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.card h2 {
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    color: #cccccc;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* 5. ESPAÇAMENTO DOS CAMPOS DO FORMULÁRIO */
+.campo-grupo {
+    margin-bottom: 15px;
+}
+
+.campo-grupo label {
+    display: block; /* Faz o texto ficar acima do campo */
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* 6. INPUTS E ÁREA DE TEXTO */
+.campo-grupo input,
+.campo-grupo textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.campo-grupo textarea {
+    height: 80px;
+    resize: vertical; /* Permite esticar a caixa apenas para baixo */
+}
+
+/* 7. BOTÕES */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #2575fc; /* Azul chamativo */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Efeito simples de clique e passar o mouse */
+.btn:hover {
+    background-color: #1a60d8;
+}

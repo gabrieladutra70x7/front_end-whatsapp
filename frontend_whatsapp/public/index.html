@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsUp - API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- LOGO DA APLICAÇÃO -->
+    <header class="header-logo">
+        <img src="img/logo.png" alt="WhatsUp Logo" id="logo-img">
+    </header>
+
+    <!-- CONTAINER PRINCIPAL -->
+    <main class="container">
+
+        <!-- CARD 1: FORMULÁRIO DE REGISTRO -->
+        <section class="card">
+            <h2>Criar Conta</h2>
+            <p class="subtitulo">Cadastre um novo usuário no sistema</p>
+            
+            <form id="formularioRegistro">
+                <div class="campo-grupo">
+                    <label for="regApelido">Apelido</label>
+                    <input type="text" id="regApelido" placeholder="Seu apelido">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="regSenha">Senha</label>
+                    <input type="password" id="regSenha" placeholder="Sua senha">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="regTelefone">Telefone</label>
+                    <input type="tel" id="regTelefone" placeholder="Ex: 5518999999999">
+                </div>
+
+                <button type="button" onclick="realizarRegistro()" class="btn">Criar Conta</button>
+            </form>
+        </section>
+
+        <!-- CARD 2: ÁREA DE MENSAGENS -->
+        <section class="card">
+            <h2>Enviar Mensagem</h2>
+            <p class="subtitulo">Envie uma mensagem via API</p>
+
+            <div id="areaMensagens">
+                <div class="campo-grupo">
+                    <label for="destinatario">Telefone do Destino</label>
+                    <input type="tel" id="destinatario" placeholder="Ex: 5518999999999">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="textoMensagem">Mensagem</label>
+                    <textarea id="textoMensagem" placeholder="Escreva sua mensagem..."></textarea>
+                </div>
+
+                <button type="button" onclick="enviarMensagem()" class="btn">Enviar Mensagem</button>
+            </div>
+        </section>
+
+    </main>
+
+   <script src="script.js"></script>
+</body>
+</html>
